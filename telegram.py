@@ -10,6 +10,6 @@ def handle_command(message):
 # handle all messages, echo response back to users
 @bot.message_handler(func=lambda message: True)
 def handle_all_message(message):
-	bot.reply_to(message, "We use Colab. You write "+message.text)
+	bot.reply_to(message, "We use Github. You write "+message.text)
 
 bot.polling()
